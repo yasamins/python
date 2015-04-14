@@ -1,0 +1,11 @@
+fname=open("strings.txt","r")
+keepgoing = True
+while keepgoing:
+	content=fname.readline()
+	content = content[:-1]
+	if content == "":
+		break
+	if content.isalnum():
+		print(content, "was ok.")		
+	else:
+		print(content, "was invalid.")

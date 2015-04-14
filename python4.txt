@@ -1,0 +1,20 @@
+def tester(givenstring):
+	if len(givenstring) < 10:
+		givenstring="Too short"
+		return givenstring
+	else:
+		return givenstring
+def main():
+	while True:
+		userinput = input("Write something (quit ends): ")
+		if userinput == "quit":
+			break
+		else:
+			pass
+		string=tester(userinput)
+		print(string)
+			
+if __name__ == "__main__":
+	main()
+			
+		

@@ -1,0 +1,27 @@
+def tester(givenstring):
+	
+	if len(givenstring) > 10 and "X" in givenstring:
+		return True
+	elif len(givenstring) < 10:
+		return "Too short"
+	else:
+		return False
+			
+def main():
+	while True:
+		
+		userinput = input("Write something (quit ends): ")
+		
+		if userinput == "quit":
+			break
+		else:
+			string=tester(userinput)
+			if string ==True:
+				print(userinput+"\nX spotted!")
+			elif string==False:
+				print(userinput)
+			else:
+				print(string)
+			
+if __name__ == "__main__":
+	main()
